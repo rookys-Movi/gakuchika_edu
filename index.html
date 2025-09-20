@@ -3,197 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【教育機関側】ガクチカワーク </title>
-    <link rel="icon" href="images/gakuchikafabi.png">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts: Noto Sans JP -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>【教育機関側】ガクチカワーク</title>
+    <link rel="icon" href="images/gakuchikafabi.png"> <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- Animate On Scroll (AOS) Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-700">
+<body>
 
-    <!-- Header -->
-    <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-sm border-b border-slate-200">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="images/gakuchika_logo02.png"ガクチカワーク ロゴ" class="h-8">
-                <span class="font-bold text-slate-800">ガクチカワーク【教育機関様向け】</span>
-            </div>
-            <button class="px-5 py-2 text-sm font-semibold text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-sm" onclick="scrollToId('form')">お問い合わせ</button>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <img src="images/gakuchika_logo02.png" alt="ガクチカワーク ロゴ" class="logo"> </div>
+            <button class="header-button" onclick="scrollToId('form')">お問い合わせ</button>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="bg-white pt-20 pb-24">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight" data-aos="fade-up">
-                    貴学との
-                </h1>
-                <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600" data-aos="fade-up" data-aos-delay="100">
-                    学生の就職率・定着率、そしてキャリア教育の質を向上させ、「選ばれる大学」としてのブランド価値を共に高めるためのご提案です。
-                </p>
-            </div>
-        </section>
-
-        <!-- 1. Background / Challenges -->
-        <section class="py-20 bg-slate-50 border-y border-slate-200">
-            <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <div class="text-center" data-aos="fade-up">
-                        <h2 class="text-3xl font-bold text-slate-800">日本の大学が直面する課題　</h2>
-                        <p class="mt-4 text-slate-500">18歳人口の減少に伴い大学間の競争が激化する中で、学生の満足度と就職支援の強化は、すべての大学にとって急務となっています。</p>
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content-wrapper" data-aos="fade-up">
+                    <div class="hero-image">
+                         <img src="images/edutop.webp" alt="Partnership concept image">
                     </div>
-                    <div class="mt-12 grid md:grid-cols-3 gap-8">
-                        <div class="p-6 bg-white border border-slate-200 rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class="font-bold text-blue-600 mb-2">就職率と定着率の向上</h3>
-                            <p class="text-sm">ミスマッチを解消し、学生が満足度の高いキャリアを歩めるよう、早期離職を防ぐ支援が求められています。</p>
-                        </div>
-                        <div class="p-6 bg-white border border-slate-200 rounded-lg" data-aos="fade-up" data-aos-delay="200">
-                            <h3 class="font-bold text-blue-600 mb-2">キャリア教育の質の向上</h3>
-                            <p class="text-sm">座学だけでなく、実践的な学びを通じて学生の社会人基礎力を育成することが重要視されています。</p>
-                        </div>
-                        <div class="p-6 bg-white border border-slate-200 rounded-lg" data-aos="fade-up" data-aos-delay="300">
-                            <h3 class="font-bold text-blue-600 mb-2">大学のブランド力強化</h3>
-                            <p class="text-sm">独自性のある質の高いキャリア支援は、大学の魅力を高め、優秀な学生の獲得に直結します。</p>
-                        </div>
+                    <div class="hero-text">
+                        <h1>貴学との包括的パートナシップのご相談</h1>
+                        <p>学生の就職率・定着率、そしてキャリア教育の質を向上させ<br><span class="highlight-blue">選ばれる大学</span>としてのブランド価値を共に高めるためのご提案です。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. Our Philosophy -->
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold text-slate-800">就活を「お見合い型」から「恋愛型」へ</h2>
-                    <p class="mt-4 text-slate-500">私たちは、企業と学生の「幸せな出会い」を実現するため、インターンシップを通じて相互理解と相性を重視したマッチングを推進します。</p>
-                </div>
-                <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    <div class="p-8 bg-slate-50 border border-slate-200 rounded-lg" data-aos="fade-right">
-                        <h3 class="text-xl font-bold text-slate-500">従来のお見合い型</h3>
-                        <p class="mt-2 text-sm text-slate-500">書類上のスペック（学歴・スキル）を重視した、短期間での一方的な選考。</p>
+        <section class="challenges-section">
+            <div class="container text-center">
+                <h2 data-aos="fade-up">日本の大学が直面する</h2>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">18歳人口の減少に伴い大学間の競争が激化する中で、学生の満足度と就職支援の強化は、すべての大学にとって急務となっています。</p>
+                <div class="challenges-grid">
+                    <div class="challenge-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>就職率と定着率の向上</h3>
+                        <p>ミスマッチを解消し、学生が満足度の高いキャリアを歩めるよう、早期離職を防ぐ支援が求められています。</p>
                     </div>
-                    <div class="p-8 bg-blue-50 border border-blue-200 rounded-lg" data-aos="fade-left">
-                        <h3 class="text-xl font-bold text-blue-800">これからの恋愛型</h3>
-                        <p class="mt-2 text-sm text-blue-700">インターンシップを通じた継続的な交流で、お互いの相性と理解を深めるマッチング。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. Solution / Features -->
-        <section class="py-20 bg-slate-50 border-y border-slate-200">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold text-slate-800">「ガクチカワーク」が貴学の課題を解決します</h2>
-                </div>
-                <div class="mt-12 space-y-12 max-w-5xl mx-auto">
-                    <!-- Issue 1 -->
-                    <div class="grid md:grid-cols-3 gap-8 items-center" data-aos="fade-up">
-                        <div class="md:col-span-1">
-                            <h3 class="text-xl font-bold text-slate-800">【課題】就職率・定着率の向上</h3>
+                    <div class="challenge-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3>キャリア教育の質の向上</h3>
+                        <p>座学だけでなく、実践的な学びを通じて学生の社会人基礎力を育成することが重要視されています。</p>
                         </div>
-                        <div class="md:col-span-2 grid sm:grid-cols-2 gap-6">
-                            <div class="feature-card"><h4 class="font-bold">推薦機能</h4><p class="text-sm mt-1">教授や職員から学生の個性を推薦。本質的なマッチングを促します。</p></div>
-                            <div class="feature-card"><h4 class="font-bold">評価機能</h4><p class="text-sm mt-1">企業からのFBを共有。学生は自己分析を深められます。</p></div>
-                            <div class="feature-card sm:col-span-2"><h4 class="font-bold">オファー機能</h4><p class="text-sm mt-1">インターン後の評価に基づき、企業から直接オファー。学生の自信に繋がります。</p></div>
-                        </div>
-                    </div>
-                    <!-- Issue 2 -->
-                    <div class="grid md:grid-cols-3 gap-8 items-center" data-aos="fade-up">
-                        <div class="md:col-span-1">
-                            <h3 class="text-xl font-bold text-slate-800">【課題】キャリア教育の質の向上</h3>
-                        </div>
-                        <div class="md:col-span-2 grid sm:grid-cols-2 gap-6">
-                            <div class="feature-card"><h4 class="font-bold">日報共有機能</h4><p class="text-sm mt-1">学生の学びをリアルタイムで把握し、的確な個別指導を可能にします。</p></div>
-                            <div class="feature-card"><h4 class="font-bold">勤怠管理機能</h4><p class="text-sm mt-1">勤務状況を正確に管理し、インターンシップの適正な運用を支援します。</p></div>
-                        </div>
+                    <div class="challenge-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3>大学のブランド力強化</h3>
+                        <p>独自性のある質の高いキャリア支援は、大学の魅力を高め、優秀な学生の獲得に直結します。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4. Partnership Vision -->
-        <section class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
-                    <h2 class="text-3xl font-bold text-slate-800">協定による具体的な連携イメージ</h2>
+        <section class="philosophy-section">
+            <div class="container text-center">
+                <h2 data-aos="fade-up">就活を<span class="highlight-gray">「お見合い型」</span>から<span class="highlight-gray">「恋愛型」</span>へ</h2>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="100">私たちは、企業と学生の「幸せな出会い」を実現するため、<br><span class="highlight-gray">インターンシップ</span>を通じて相互理解と相性を重視したマッチングを推進します。</p>
+                <div class="philosophy-image" data-aos="fade-up">
+                    <img src="images/分析イメージ.webp" alt="Matching process visualization"> </div>
+                <div class="philosophy-comparison">
+                    <div class="comparison-box old-way" data-aos="fade-right">
+                        <h3>従来のお見合い型</h3>
+                        <p>書類上のスペック<br>（学歴・スキル）を重視した、短期間での一方的な選考。</p>
                 </div>
-                <div class="mt-12 grid md:grid-cols-3 gap-8">
-                    <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="text-xl font-bold text-slate-800 mb-2">学生への周知・利用促進</h3>
+                    <div class="arrow-image">
+                        <div class="triple-chevron-right">▶▶▶</div>
+                    </div>
+                    <div class="comparison-box new-way" data-aos="fade-left">
+                        <h3>これからの恋愛型</h3>
+                        <p>インターンシップを通じた<br>継続的な交流で、お互いの相性と理解を深めるマッチング。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="solution-section">
+            <div class="container text-center">
+                <h2 class="solution-title" data-aos="fade-up">
+                    <img src="images/gakuchika_logo01.png" alt="ガクチカワーク ロゴ" class="solution-logo"> が <p    class="solution-title-text">課題を解決します</p>
+                </h2>
+                <div class="solution-grid">
+                    <div class="solution-category" data-aos="fade-up">
+                        <div class="solution-issue">
+                            <div class="issue-label">課題</div>
+                            <h3>就職率・定着率の向上</h3>
+                        </div>
+                        <div class="solution-features">
+                            <div class="feature-card-solution">
+                                <h4>推薦機能</h4>
+                                <p>教授や職員から学生の個性を推薦。本質的なマッチングを促します。</p>
+                            </div>
+                            <div class="feature-card-solution">
+                                <h4>評価機能</h4>
+                                <p>企業からのFBを共有。学生は自己分析を深められます。</p>
+                            </div>
+                            <div class="feature-card-solution">
+                                <h4>オファー機能</h4>
+                                <p>インターン後の評価に基づき、企業から直接オファー。学生の自信に繋がります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="solution-issue">
+                            <div class="issue-label">課題</div>
+                            <h3>キャリア教育の質の向上</h3>
+                        </div>
+                        <div class="solution-features">
+                            <div class="feature-card-solution">
+                                <h4>日報共有機能</h4>
+                                <p>学生の学びをリアルタイムで把握し、的確な個別指導を可能にします。</p>
+                            </div>
+                            <div class="feature-card-solution">
+                                <h4>勤怠管理機能</h4>
+                                <p>勤務状況を正確に管理し、インターンシップの適正な運用を支援します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnership section -->
+        <section class="partnership-section">
+            <div class="container text-center">
+                <h2 data-aos="fade-up">協定による具体的な連携イメージ</h2>
+                <div class="partnership-grid">
+                    <div class="partnership-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="partnership-image"><img src="images/2.データwebp.webp" alt="Student promotion image"></div> <h3>学生への周知・利用促進</h3>
                         <p>キャリアセンターと連携し、ガクチカワークのサービスを学生に周知します。</p>
                     </div>
-                    <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="200">
-                        <h3 class="text-xl font-bold text-slate-800 mb-2">データベース連携</h3>
+                    <div class="partnership-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="partnership-image"><img src="images/1.告知.webp" alt="Database integration image"></div> <h3>データベース連携</h3>
                         <p>貴学の学生DBと連携し、企業が求める人材をより正確にレコメンドします。</p>
                     </div>
-                    <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="300">
-                        <h3 class="text-xl font-bold text-slate-800 mb-2">共同イベントの開催</h3>
+                    <div class="partnership-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="partnership-image"><img src="images/3.オンラインイベント.webp" alt="Joint event image"></div> <h3>共同イベントの開催</h3>
                         <p>学内合同企業説明会やインターンシップ説明会を共同で開催します。</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Form Section -->
-        <section id="form" class="py-20 bg-slate-100 border-t border-slate-200">
-            <div class="container mx-auto px-6">
-                <div class="max-w-3xl mx-auto">
+        <!-- Form section -->
+        <section id="form" class="form-section">
+            <div class="container">
+                <div class="form-container">
                     <div class="text-center" data-aos="fade-up">
-                        <h2 class="text-3xl font-bold text-slate-800">お問い合わせ・ご相談</h2>
-                        <p class="mt-4 text-slate-500">本提案の詳細についてご説明の機会をいただけましたら幸いです。下記フォームよりお気軽にご連絡ください。</p>
+                        <h2>お問い合わせ・ご相談</h2>
+                        <p class="subtitle white">本提案の詳細についてご説明の機会をいただけましたら幸いです。<br>下記フォームよりお気軽にご連絡ください。</p>
                     </div>
-                    <form id="inquiryForm" class="mt-10 bg-white p-8 rounded-lg shadow-md space-y-5" data-aos="fade-up" data-aos-delay="100">
+                    <form id="inquiryForm" class="contact-form" data-aos="fade-up" data-aos-delay="100">
                         <input type="hidden" name="landingPageID" value="Gakuchika_Education">
                         
-                        <div class="grid sm:grid-cols-2 gap-5">
+                        <div class="form-grid">
                             <div>
-                                <label class="form-label">貴学名<span class="text-red-500">*</span></label>
+                                <label class="form-label">貴学名<span class="required">*</span></label>
                                 <input name="universityName" required placeholder="例）〇〇大学" class="form-input" />
                             </div>
                             <div>
                                 <label class="form-label">部署・役職</label>
                                 <input name="departmentName" placeholder="例）キャリアセンター／部長" class="form-input" />
                             </div>
-                        </div>
-                         <div class="grid sm:grid-cols-2 gap-5">
                             <div>
-                                <label class="form-label">ご担当者名<span class="text-red-500">*</span></label>
+                                <label class="form-label">ご担当者名<span class="required">*</span></label>
                                 <input name="fullName" required placeholder="姓 名" class="form-input" />
                             </div>
                             <div>
-                                <label class="form-label">メールアドレス<span class="text-red-500">*</span></label>
+                                <label class="form-label">メールアドレス<span class="required">*</span></label>
                                 <input name="email" required type="email" placeholder="name@example.ac.jp" class="form-input" />
                             </div>
                         </div>
-                        <div>
-                            <label class="form-label">お電話番号</label>
-                            <input name="phoneNumber" type="tel" placeholder="03-1234-5678" class="form-input" />
-                        </div>
-                        <div>
+                        <div class="form-full-width">
                             <label class="form-label">お問い合わせ内容（任意）</label>
-                            <textarea name="message" rows="4" placeholder="ご相談内容やご質問などをご自由にご記入ください" class="form-input"></textarea>
+                            <textarea name="message" rows="5" placeholder="ご相談内容やご質問などをご自由にご記入ください" class="form-input"></textarea>
                         </div>
-                        <div>
-                            <label class="flex items-center gap-2 text-sm text-slate-600">
-                                <input type="checkbox" required class="rounded border-slate-300 text-blue-600 focus:ring-blue-500"/>
-                                <span>プライバシーポリシーに同意します<span class="text-red-500">*</span></span>
+                        <div class="privacy-policy">
+                            <label>
+                                <input type="checkbox" required />
+                                <span>プライバシーポリシーに同意します<span class="required">*</span></span>
                             </label>
                         </div>
-                        <button id="submitButton" class="w-full py-3 text-lg font-bold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-md disabled:opacity-50 disabled:cursor-wait" type="submit">
-                            送信する
+                        <button id="submitButton" class="submit-button" type="submit">
+                            同意して送信する
                         </button>
                     </form>
                 </div>
@@ -202,22 +196,19 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-200">
-        <div class="container mx-auto px-6 py-8 text-center text-slate-600">
-            <p class="font-semibold"><a href="https://rookyworks.jp/" target="_blank" class="hover:underline">ルーキーワークス株式会社</a></p>
-            <p class="text-sm mt-2">〒101-0065 東京都千代田区西神田2-1-2 西神田センタービル5F</p>
-            <div class="mt-4 text-xs">
-                <a href="https://rookyworks.jp/privacy-policy/" class="hover:underline" target="_blank">プライバシーポリシー</a>
-                <span class="mx-2">|</span>
+    <!-- Footer section -->
+    <footer class="site-footer-bottom">
+        <div class="container text-center">
+            <p class="company-name"><a href="https://rookyworks.jp/" target="_blank">ルーキーワークス株式会社</a></p>
+            <p class="address">〒101-0065 東京都千代田区西神田2-1-2 西神田センタービル5F</p>
+            <div class="footer-links">
+                <a href="https://rookyworks.jp/privacy-policy/" target="_blank">プライバシーポリシー</a>
                 <small>&copy; 2025 ガクチカワーク by Rooky</small>
             </div>
         </div>
     </footer>
 
-    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>

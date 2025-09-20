@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         // ★★★重要★★★: ご自身のGoogle Apps ScriptのURLに置き換えてください
-        const SCRIPT_URL = "【ここにあなたのApps ScriptのURLを貼り付け】";
-
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbySbuZ7SkFpV9mhpiD6QdvH5GQ2AVEitF__UVKn9r5xJunN1f_pe07yqknce21EhCsg/exec";
         // Fetch APIを使用してデータを送信
         fetch(SCRIPT_URL, {
             method: 'POST',
@@ -56,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
             body: JSON.stringify(payload)
         })
         .then(() => {
-            // 成功した場合、サンクスページに移動
-            window.top.location.href = SCRIPT_URL + '?page=thankyou';
+            // データ送信成功後、ローカルのthankyou.htmlに移動
+            window.top.location.href = 'thankyou.html';
         })
         .catch(error => {
             // エラーが発生した場合
