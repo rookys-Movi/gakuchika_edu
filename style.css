@@ -9,6 +9,17 @@
     --color-text-medium: #4b5563;
     --color-text-light: #ffffff;
     --font-family-base: 'Noto Sans JP', sans-serif;
+    --font-family-display: 'Corporate-Logo ver2', 'Noto Sans JP', sans-serif;
+}
+
+@font-face {
+    font-family: 'Corporate-Logo ver2';
+    src: local('コーポレート・ロゴ ver2'), local('Corporate-Logo ver2'),
+         url('fonts/Corporate-Logo-ver2.woff2') format('woff2'),
+         url('fonts/Corporate-Logo-ver2.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -33,6 +44,7 @@ body {
 h1, h2, h3 {
     font-weight: 900;
     margin-top: 0;
+    font-family: var(--font-family-display);
 }
 
 h2 {
